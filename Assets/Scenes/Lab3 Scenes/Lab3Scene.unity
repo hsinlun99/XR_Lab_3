@@ -895,6 +895,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8cf87fef9298444ca38948b2c8a4073, type: 3}
       insertIndex: -1
       addedObject: {fileID: 914255938}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8cf87fef9298444ca38948b2c8a4073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 914255941}
   m_SourcePrefab: {fileID: 100100000, guid: e8cf87fef9298444ca38948b2c8a4073, type: 3}
 --- !u!1 &914255937 stripped
 GameObject:
@@ -1020,9 +1023,10 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 914255941}
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &914255939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1055,6 +1059,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8cf87fef9298444ca38948b2c8a4073, type: 3}
   m_PrefabInstance: {fileID: 914255936}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &914255941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914255937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
 --- !u!1 &1171253295
 GameObject:
   m_ObjectHideFlags: 0
